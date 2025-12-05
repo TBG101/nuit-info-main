@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zied Harzallah | Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/src/css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script type="module" src="/src/js/portfolio.js"></script>
+
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="logo">ZH</div>
+        <nav>
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="name-text">
+            <span class="name-highlight">Zied Harzallah</span>
+          </h1>
+          <div class="typewriter">
+            <span
+              class="txt-rotate"
+              data-period="3000"
+              data-rotate='["Software Engineer", "Web Developer", "Problem Solver", "Tech Enthusiast"]'
+            ></span>
+          </div>
+          <p class="hero-description">
+            Crafting immersive digital experiences with code and creativity.
+          </p>
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary-btn">View My Work</a>
+            <a href="#contact" class="btn secondary-btn">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+        <div class="scroll-arrows">
+          <span class="m_scroll_arrows one"></span>
+          <span class="m_scroll_arrows two"></span>
+          <span class="m_scroll_arrows three"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2>About Me</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="about-content">
+          <div class="about-image">
+            <div class="image-container">
+              <div class="space-profile">
+                <div class="orbit-ring"></div>
+                <div class="glow-effect"></div>
+                <img
+                  src="zied.png"
+                  alt="Zied Harzallah"
+                  class="profile-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="about-text">
+            <h3>Hello, I'm Zied</h3>
+            <p>
+              I'm a passionate software engineer dedicated to creating
+              efficient, innovative solutions that solve real-world problems.
+              With a strong foundation in both frontend and backend
+              technologies, I bring ideas to life through clean, maintainable
+              code.
+            </p>
+            <p>
+              My journey in technology began with a curiosity about how things
+              work, which evolved into a career building digital experiences
+              that make an impact. I thrive in collaborative environments and am
+              constantly seeking new challenges that push me to grow as a
+              developer.
+            </p>
+            <div class="personal-info">
+              <div class="info-item">
+                <span class="info-title">Email:</span>
+                <span class="info-value">ziedhrz@gmail.com</span>
+              </div>
+              <div class="info-item">
+                <span class="info-title">Location:</span>
+                <span class="info-value">Tunisia</span>
+              </div>
+            </div>
+            <a href="cv.pdf" class="btn primary-btn" id="download-cv" download>
+              Download CV <i class="fas fa-download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Skills</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="skills-content">
+          <div class="skills-tabs-content">
+            <div class="skills-category active" data-tab-content="frontend">
+              <h3>Frontend</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                  <h4>HTML5</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                  <h4>CSS3</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-js"></i></div>
+                  <h4>JavaScript</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-react"></i></div>
+                  <h4>React.js</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                  <h4>Node.js</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                  <h4>Three.js</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category" data-tab-content="backend">
+              <h3>Backend</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-node"></i></div>
+                  <h4>Express.js</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-database"></i></div>
+                  <h4>MongoDB</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-server"></i></div>
+                  <h4>SQL</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-python"></i></div>
+                  <h4>Python</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                  <h4>Firebase</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-project-diagram"></i>
+                  </div>
+                  <h4>GraphQL</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category" data-tab-content="tools">
+              <h3>Tools & Others</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                  <h4>Git</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                  <h4>Docker</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                  <h4>Figma</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-cube"></i></div>
+                  <h4>Blender</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+                  <h4>CI/CD</h4>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
+                  <h4>Responsive Design</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>My Projects</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="app">App</button>
+          <button class="filter-btn" data-filter="3d">3D</button>
+        </div>
+        <div class="projects-grid">
+          <!-- Project 1 - 3D Portfolio -->
+          <div class="project-card" data-category="3d">
+            <div class="project-img">
+              <img
+                src="/projects/3dportfolio.png"
+                alt="3D Astronaut Portfolio"
+              />
+            </div>
+            <div class="project-info">
+              <h3>3D Portfolio</h3>
+              <p>
+                An interactive 3D portfolio showcasing my projects, skills, and
+                experience in a visually immersive way.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>Three.js</span>
+                <span>GSAP</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/TBG101/3D-portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="index.html" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 - E-commerce Website -->
+          <div class="project-card" data-category="web">
+            <div class="project-img">
+              <img src="/projects/glitzgear.png" alt="E-commerce Website" />
+            </div>
+            <div class="project-info">
+              <h3>E-commerce Website</h3>
+              <p>
+                A full-featured e-commerce platform with secure authentication,
+                product management, and a seamless checkout experience.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>MongoDB</span>
+                <span>Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/TBG101/Next.js-E-commerce"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://glitzgear-portfolio.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 - Music Player App -->
+          <div class="project-card" data-category="app">
+            <div class="project-img">
+              <img src="/projects/musicplayer.jpg" alt="Music Player App" />
+            </div>
+            <div class="project-info">
+              <h3>Music Player App</h3>
+              <p>
+                A sleek and feature-rich music player app with offline support,
+                YouTube audio downloads, and podcast streaming.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>FFmpeg</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/TBG101/Music-Player-Android"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 - PC Remote Control -->
+          <div class="project-card" data-category="app">
+            <div class="project-img">
+              <img
+                style="
+                  object-fit: contain;
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                "
+                src="/projects/power.png"
+                alt="PC Remote Control"
+              />
+            </div>
+            <div class="project-info">
+              <h3>PC Remote Control</h3>
+              <p>
+                A remote control application that allows users to manage their
+                PC wirelessly using their mobile device with ease.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>Rust</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/TBG101/Remote-Desktop-Shutdown"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Mobile Repository"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://github.com/TBG101/Remote-Desktop-Shutdown-Windows"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Desktop Repository"
+                >
+                  <i class="fab fa-github-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 - Kick VOD Downloader -->
+          <div class="project-card" data-category="app">
+            <div class="project-img">
+              <img
+                src="https://ugc.production.linktr.ee/a3375c15-1d36-4492-a5f4-d4b826587a16_kick---green-4x.png"
+                alt="Kick VOD Downloader"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Kick VOD Downloader</h3>
+              <p>
+                A powerful tool for downloading and saving video-on-demand
+                content from Kick.com for offline viewing.
+              </p>
+              <div class="project-tags">
+                <span>Flutter</span>
+                <span>FFmpeg</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/TBG101/kickdownloader"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <!-- <a href="#" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-external-link-alt"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+          <!-- Project 6 - Mow lawn -->
+          <div class="project-card" data-category="web">
+            <div class="project-img">
+              <img
+                src="projects/mow_lawnnpming.png"
+                alt="Lawn Mowing Landing Page"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Lawn Mowing Landing Page</h3>
+              <p>
+                A landing page for a lawn care service, showcasing their
+                services and allowing users to request a quote.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://ever-green-kohl.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-projects">
+          <a
+            href="https://github.com/TBG101"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn secondary-btn"
+            >See More on GitHub <i class="fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get In Touch</h2>
+          <div class="underline"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's Connect</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas or
+              opportunities to be part of your vision.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-envelope"></i></div>
+                <div class="info">
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:ziedhrz@gmail.com">ziedhrz@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="info">
+                  <h4>Location</h4>
+                  <p>Tunisia</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <div class="info">
+                  <h4>Social</h4>
+                  <div class="social-links">
+                    <a
+                      href="https://linkedin.com/in/zied-harzallah"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fab fa-linkedin"></i
+                    ></a>
+                    <a
+                      href="https://github.com/TBG101"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <!-- Form Status Message -->
+            <div id="form-status" class="form-status hidden">
+              <div class="status-icon">
+                <i class="fas fa-check-circle success-icon"></i>
+                <i class="fas fa-exclamation-triangle error-icon"></i>
+              </div>
+              <div class="status-message">
+                <h4 class="status-title"></h4>
+                <p class="status-text"></p>
+              </div>
+              <button type="button" class="btn secondary-btn send-another-btn">
+                Send Another Message
+              </button>
+            </div>
+            <form
+              id="contact-form"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="form-name" value="contact" />
+              <!-- Honeypot field for spam protection -->
+              <div style="display: none">
+                <label
+                  >Don't fill this out if you're human: <input name="bot-field"
+                /></label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+                <label for="name">Your Name</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+                <label for="email">Your Email</label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <label for="subject">Subject</label>
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+                <label for="message">Your Message</label>
+              </div>
+              <button type="submit" class="btn primary-btn" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading hidden">
+                  <i class="fas fa-spinner fa-spin"></i> Sending...
+                </span>
+                <i class="fas fa-paper-plane btn-icon"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">ZH</div>
+          <div class="footer-nav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://linkedin.com/in/zied-harzallah"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/TBG101"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Zied Harzallah. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="/src/js/portfolio.js"></script>
+  </body>
+</html>

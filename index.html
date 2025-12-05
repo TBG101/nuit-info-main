@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Astronaut Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+    <link rel="stylesheet" href="/src/css/styles.css" />
+  </head>
+  <body>
+    <script type="module" src="/src/main.js"></script>
+    <!-- Portfolio Selection Screen -->
+    <div id="portfolio-selection">
+      <div class="selection-container">
+        <h1 class="selection-title">Linux Journey</h1>
+        <p class="selection-subtitle">
+          Discover Why Schools Should Adopt Linux
+        </p>
+
+        <div class="portfolio-options">
+          <div class="portfolio-option" id="select-3d">
+            <div class="option-icon">🚀</div>
+            <h3>Start 3D Journey</h3>
+            <p>
+              Explore an immersive 3D space adventure while learning about Linux
+              benefits for education
+            </p>
+            <button class="option-btn">Explore in 3D</button>
+          </div>
+
+          <div class="portfolio-option" id="select-2d">
+            <div class="option-icon">💼</div>
+            <h3>Quick Summary</h3>
+            <p>Read a comprehensive guide about Linux in education</p>
+            <button class="option-btn">Read Guide</button>
+          </div>
+        </div>
+
+        <p class="selection-note">
+          You can always switch between experiences later
+        </p>
+      </div>
+    </div>
+
+    <div id="loading">
+      <span id="loader"></span>
+      <span id="current-download"></span>
+      <div id="music-request">
+        Would you like to play music?
+        <button id="yes-music" class="btn">Yes</button>
+        <button id="no-music" class="btn">No</button>
+        <p>You can always disable this at the top right corner</p>
+      </div>
+    </div>
+
+    <div
+      id="music-control"
+      style="position: fixed; top: 10px; right: 10px; z-index: 1000"
+    >
+      <button id="music-toggle" style="display: none" title="Toggle Music">
+        <img src="/icons/play-icon.png" alt="Play Music" />
+      </button>
+    </div>
+    <nav id="navigation" style="display: none">
+      <ul>
+        <li>
+          <a href="#contact" id="nav-contact" class="nav-item"> Contact</a>
+        </li>
+
+        <li>
+          <ul id="nav-projects-dropdown" class="projects-dropdown"></ul>
+          <a href="#projects" id="nav-projects" class="nav-item"> Projects</a>
+        </li>
+        <li>
+          <a href="#technologies" id="nav-technologies" class="nav-item"
+            >Technologies</a
+          >
+        </li>
+        <li>
+          <a href="#introduction" id="nav-introduction" class="nav-item active">
+            Introduction</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <section id="project-template" class="project">
+      <div class="project__content">
+        <h1 class="project__title">https://github.com/TBG101/3D-portfolio</h1>
+        <p class="project__description">
+          Explore the cosmos with this 3D astronaut model created using
+          Three.js. The astronaut comes to life with smooth animations powered
+          by the GSAP library.
+        </p>
+
+        <h2>Technologies used</h2>
+        <ul class="project__stack"></ul>
+
+        <div class="container" style="width: 100%; max-width: 400px">
+          <a href="" target="_blank" class="project__link btn"
+            >View Code on GitHub 🚀
+          </a>
+        </div>
+      </div>
+      <div class="move-instruction">Move the astronaut to unfocus</div>
+    </section>
+
+    <div id="sos-interface" class="hidden">
+      <div class="sos-container">
+        <h2>🛰️ Beacon Signal Detected</h2>
+        <p>
+          A forgotten beacon pulses in the void... A long-lost message is
+          embedded within.
+        </p>
+        <div class="sos-message">
+          <h3>
+            <img src="lock.png" alt="Unlocked icon" class="social-icon" />
+            Decoded Message:
+          </h3>
+          <p>
+            "This is Captain Zied Harzallah, custodian of this celestial
+            waypoint. If you've found this beacon, you are among the explorers
+            of the digital frontier. My mission: to craft immersive experiences
+            and shape the virtual cosmos. The void may be infinite, but
+            connection is within reach. Establish contact below."
+          </p>
+          <h3>Secure Communication Links Found:</h3>
+          <ul>
+            <li>
+              <img src="mail.png" alt="E-mail" class="social-icon" />
+              <a href="mailto:ziedhrz@gmail.com">ziedhrz@gmail.com</a>
+            </li>
+            <li>
+              <img src="link.png" alt="Portfolio" class="social-icon" />
+
+              <a
+                href="https://www.yourportfolio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <img src="LinkedIn.png" alt="LinkedIn" class="social-icon" />
+              <a
+                href="https://linkedin.com/in/zied-harzallah"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+            <li>
+              <img src="GitHub.png" alt="GitHub" class="social-icon" />
+              <a
+                href="https://github.com/TBG101"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="container" style="width: 100%">
+          <button
+            id="close-sos"
+            href="https://github.com/yourusername/astronaut-project"
+            class="project__link btn"
+            rel="noopener noreferrer"
+            style="text-decoration: none; width: 100%"
+          >
+            🚀 Close Transmission
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
